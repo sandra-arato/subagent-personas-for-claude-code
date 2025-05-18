@@ -85,18 +85,19 @@ Documentation should be placed in the `docs/` folder and should include the foll
 - **Objectives**: A high-level overview of the project goals and deliverables.
 - **Architecture**: A high-level overview of the project architecture and stack.
 - **Technology**: A high-level overview of the project tech stack, how it is used, and how it interracts with other services.
-- **Features**: A high-level overview of the project features and functionality.
+- **Style**: A high-level overview of the project style guide, including naming conventions, code style, and other guidelines for writing code.
+- **Features**: A high-level overview of the project features and functionality for non-technical items including designs and user experiences.
 
 ### Project Documentation Structure
 
-For large projects, it's recommended to organize documentation hierarchically:
+For large projects, it's recommended to organise documentation hierarchically:
 
 - Create subdirectories for major categories (e.g., `/docs/architecture/`, `/docs/features/`)
 - Use individual files for specific components or topics
 - Number filenames to control display order (e.g., `01-database.md`, `02-backend-api.md`)
 - (Optional) Include index files in each directory to provide navigation and overview if you wish to use Docusaurus or similar tools to generate documentation from the markdown files.
 
-This approach improves navigation, maintenance, and readability for both humans and LLMs analyzing your documentation.
+This approach improves navigation, maintenance, and readability for both humans and LLMs analysing your documentation.
 
 ### Usage
 
@@ -147,6 +148,7 @@ The context folder serves as a critical project memory repository, documenting t
 - Encountered problems and their solutions
 - Key design decisions and their rationale
 - Project-specific knowledge that isn't directly code or documentation
+- The current state of any active planning or development task(s)
 
 This repository is valuable for both:
 
@@ -155,10 +157,11 @@ This repository is valuable for both:
 
 To maintain an effective context folder:
 
-1. Update after significant LLM sessions (ask the LLM to summarize its work)
-2. Document blockers and solutions when resolved
-3. Organize according to your project guidelines
+1. Update the `history.md` after significant LLM sessions (ask the LLM to summarise its work)
+2. Document errors and solutions (when resolved) in a `learnings.md` file
+3. Organise `planning.md` according to your project guidelines
 4. Include relevant contextual information that would help new team members
+5. Maintain an `activity.md` file to track the current state of the active task for _this_ branch
 
 While LLMs should read these files to inform their work, they aren't expected to perfectly recall all previous context. Regular maintenance of this folder by both LLMs and human developers ensures continuity and knowledge preservation throughout the project lifecycle.
 

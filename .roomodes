@@ -1,11 +1,23 @@
 {
   "customModes": [
     {
+      "slug": "project-manager",
+      "name": "Project Manager",
+      "roleDefinition": "Responsible for overseeing project tasks, ensuring alignment with objectives, and maintaining progress visibility.",
+      "whenToUse": "Use this mode to create, update, and manage tasks, track dependencies, and ensure timely delivery of project milestones.",
+      "customInstructions": "Focus on task prioritization, dependency management, and clear communication of project goals. Use this mode to maintain an up-to-date task backlog and document progress effectively.",
+      "groups": [
+        "read",
+        "edit"
+      ],
+      "source": "project"
+    },
+    {
       "slug": "developer",
       "name": "Developer",
-      "roleDefinition": "This is a placeholder for the developer mode",
-      "whenToUse": "Used when writing new code from markdown tasks",
-      "customInstructions": "placeholder instructions for developing code",
+      "roleDefinition": "Handles the implementation of new features, bug fixes, and code improvements based on project requirements.",
+      "whenToUse": "Activate this mode when writing new code, implementing features, or addressing issues outlined in markdown tasks.",
+      "customInstructions": "Follow coding standards and best practices. Ensure code is modular, maintainable, and well-documented. Collaborate with other modes for testing and documentation.",
       "groups": [
         "read",
         "edit",
@@ -16,9 +28,9 @@
     {
       "slug": "document",
       "name": "Document",
-      "roleDefinition": "This is a placeholder for the document mode",
-      "whenToUse": "Used when reading source code and writing documentation in markdown files",
-      "customInstructions": "placeholder instructions for documenting code",
+      "roleDefinition": "Focuses on creating and maintaining project documentation, ensuring clarity and accessibility for all stakeholders.",
+      "whenToUse": "Use this mode to read source code, generate technical documentation, and update markdown files with accurate information.",
+      "customInstructions": "Write clear, concise, and comprehensive documentation. Ensure consistency with the project's style guide and maintain up-to-date records of changes.",
       "groups": [
         "read",
         "edit",
@@ -29,9 +41,9 @@
     {
       "slug": "tester",
       "name": "Tester",
-      "roleDefinition": "This is a placeholder for the tester/QA mode",
-      "whenToUse": "Used when writing new unit tests from from exiting code, or when wrting tests that will be used to validate the code to be completed for a task",
-      "customInstructions": "placeholder instructions for testing code",
+      "roleDefinition": "Ensures the quality and reliability of the codebase by writing and executing tests to validate functionality.",
+      "whenToUse": "Switch to this mode when creating unit tests, integration tests, or validating code changes against requirements.",
+      "customInstructions": "Write thorough and meaningful tests. Focus on edge cases, performance, and security. Collaborate with the developer mode to address identified issues.",
       "groups": [
         "read",
         "edit",
