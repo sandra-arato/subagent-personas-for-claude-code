@@ -53,7 +53,7 @@ Rooles and Roo Code offer a lightweight, open-source alternative to embedded age
 └── .roo/                     # Roo Code configuration via Rooles (submodule)
     ├── rules-architect/      # Rules for the architect role
     ├── rules-developer/      # Rules for the developer role
-    ├── rules-docement/       # Rules for the document role
+    ├── rules-document/       # Rules for the document role
     ├── rules-tester/         # Rules for the tester role
     ├── rules/                # Rules for all roles
     ├── CHANGELOG.md
@@ -66,7 +66,7 @@ Rooles and Roo Code offer a lightweight, open-source alternative to embedded age
 
 1. Add the project as a submodule to your project in the `.roo` folder:
 
-```sh
+```bash
 cd <your-project>
 git submodule add https://github.com/dbryar/rooles.git .roo
 mkdir -p ./docs ./tasks ./tasks/context ./tasks/requests ./tasks/tickets
@@ -106,9 +106,10 @@ If you are adding Rooles to an existing project, you can use the `/document` rol
 
 ```plaintext
 You have been given a project to maintain and your first job is to document the existing code base, noting the high level goals/deliverables, and the project architecture/tech stack. Read through the source code in the @src/ directory and generate documentation for the project in the @docs/ folder with the following sections and corresponding markdown files:
-1. Goals
+1. Objectives
 2. Architecture
-3. Features
+3. Technology
+4. Features
 ```
 
 ### New Projects
@@ -117,12 +118,23 @@ If you are starting a new project, you can use the `/architect` role to generate
 
 ```plaintext
 You have been assigned as the project lead and your first job is to document the project goals/deliverables, and the project architecture/tech stack for the developers to use when writing new code. In the @docs/ folder create the following markdown files:
-1. Goals
+1. Objectives
 2. Architecture
-3. Features
+3. Technology
+4. Features
 then begin by asking me questions about the project to complete the documentation.
 
-As we interact back and forth, I will provide you with the information you need to add to, or edit the documentation, occasionally asking you questions to elicit helpful responses that will fill my knowledge gaps. Once we have completed the documentation, the next step will be to generate a set of tasks in the @docs/tasks/ folder that will form the basis of work tickets for the developers to use when writing new code. These tasks will be used to generate individual work tickets that will define the requirements for project code and other files when work is being completed either by a human developer, or by you running in the 'developer' role. Each task should be a markdown file and numbered in a logical order so that a directory list of tasks always appears in the order they should be run. Use a table in an index.md file to list the tasks in the order they should be run, their current status, and who or what is responsible for completing them.
+As we interact back and forth, I will provide you with the information you need to add to, or edit the documentation, occasionally asking you questions to elicit helpful responses that will fill my knowledge gaps.
+Once we have completed the documentation, the next step will be to generate a set of tasks in the @docs/tasks/ folder that will form the basis of work tickets for the developers to use when writing new code.
+These tasks will be used to generate individual work tickets that will define the requirements for project code and other files when work is being completed either by a human developer, or by you running in the 'developer' role.
+Each task should be a markdown file and numbered in a logical order so that a directory list of tasks always appears in the order they should be run.
+Use a table in an index.md file to list the tasks in the order they should be run, their current status, and who or what is responsible for completing them.
+The table should include the following columns:
+- Task ID
+- Request ID
+- Description
+- Commit
+- Status
 ```
 
 ## Tasks
