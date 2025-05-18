@@ -11,7 +11,9 @@ Thank you for considering contributing to the Rooles Project! Follow these guide
 
 ## Code of Conduct
 
-Don't be a dick. Simple as that.
+Don't rip off other people's work. If you use code from another project, make sure to give credit where it's due. We follow the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct/) and expect all contributors to adhere to it.
+
+Please be respectful and considerate in your interactions with others.
 
 ## Questions?
 

@@ -1,0 +1,43 @@
+{
+  "customModes": [
+    {
+      "slug": "developer",
+      "name": "Developer",
+      "roleDefinition": "This is a placeholder for the developer mode",
+      "whenToUse": "Used when writing new code from markdown tasks",
+      "customInstructions": "placeholder instructions for developing code",
+      "groups": [
+        "read",
+        "edit",
+        "command"
+      ],
+      "source": "project"
+    },
+    {
+      "slug": "document",
+      "name": "Document",
+      "roleDefinition": "This is a placeholder for the document mode",
+      "whenToUse": "Used when reading source code and writing documentation in markdown files",
+      "customInstructions": "placeholder instructions for documenting code",
+      "groups": [
+        "read",
+        "edit",
+        "command"
+      ],
+      "source": "project"
+    },
+    {
+      "slug": "tester",
+      "name": "Tester",
+      "roleDefinition": "This is a placeholder for the tester/QA mode",
+      "whenToUse": "Used when writing new unit tests from from exiting code, or when wrting tests that will be used to validate the code to be completed for a task",
+      "customInstructions": "placeholder instructions for testing code",
+      "groups": [
+        "read",
+        "edit",
+        "command"
+      ],
+      "source": "project"
+    }
+  ]
+}
