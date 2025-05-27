@@ -7,13 +7,15 @@ This guide will help you get started quickly with agentic LLMs in VS Code using 
 1. Install the Roo Code extension.
 2. Open the Roo Code extension, click settings (Gear Icon), then configure your LLM provider, and model.
    - If you just want to try it out, you can use whatever model is currently free at [openrouter.ai].
-   - If you required to use a sanctioned LLM provider by your company, you can use the `VS Code LM API Server` to connect to your company's sanctioned LLM provider such as Github CoPilot Enterprise.
+   - If you are required to use a sanctioned LLM provider by your company, you can use the `VS Code LM API Server` to connect to your company's sanctioned LLM provider such as GitHub Copilot Enterprise.
 3. Add the Rooles project as a submodule to your project in the `.roo` folder:
 
 ```sh
 cd <your-project>
 git submodule add https://github.com/dbryar/rooles.git .roo
 ```
+
+- If you wish to customise modes, copy `.roo/modes.json` to `.roomodes.json` in your project root.
 
 ## The long version
 

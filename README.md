@@ -70,7 +70,7 @@ Rooles and Roo Code offer a lightweight, open-source alternative to embedded age
 cd <your-project>
 git submodule add https://github.com/dbryar/rooles.git .roo
 mkdir -p ./docs ./tasks ./tasks/context ./tasks/requests ./tasks/tickets
-cp .roo/modes.json ./.roomodes.json
+cp .roo/modes.json ./.roomodes.json  # Copy the modes file if you wish to customise modes for your project
 ```
 
 2. Add your project documentation into the `docs/` folder using markdown.
@@ -84,8 +84,8 @@ Documentation should be placed in the `docs/` folder and should include the foll
 
 - **Objectives**: A high-level overview of the project goals and deliverables.
 - **Architecture**: A high-level overview of the project architecture and stack.
-- **Technology**: A high-level overview of the project tech stack, how it is used, and how it interracts with other services.
-- **Style**: A high-level overview of the project style guide, including naming conventions, code style, and other guidelines for writing code.
+- **Technical**: A high-level overview of the project tech stack, how it is used, and how it interacts with other services.
+- **Style** (optional): A high-level overview of the project style guide, including naming conventions, code style, and other guidelines for writing code.
 - **Features**: A high-level overview of the project features and functionality for non-technical items including designs and user experiences.
 
 ### Project Documentation Structure
@@ -220,4 +220,5 @@ You can fork this repository and add your own rules, modes, and prompts to suit 
 ```sh
 cd <your-project>
 git submodule add https://github.com/<your-handle>/rooles.git .roo
+# If you wish to customise modes, copy .roo/modes.json to .roomodes.json in your project root
 ```
