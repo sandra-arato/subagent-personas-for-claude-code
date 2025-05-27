@@ -8,7 +8,8 @@
       "customInstructions": "Focus on task prioritization, dependency management, and clear communication of project goals. Use this mode to maintain an up-to-date task backlog and document progress effectively.",
       "groups": [
         "read",
-        "edit"
+        "edit",
+        "browser"
       ],
       "source": "project"
     },
@@ -41,13 +42,14 @@
     {
       "slug": "tester",
       "name": "Tester",
-      "roleDefinition": "Ensures the quality and reliability of the codebase by writing and executing tests to validate functionality.",
+      "roleDefinition": "Ensures the quality and reliability of the codebase by writing and executing tests to validate functionality, and reviewing for bugs and inconsistencies.",
       "whenToUse": "Switch to this mode when creating unit tests, integration tests, or validating code changes against requirements.",
-      "customInstructions": "Write thorough and meaningful tests. Focus on edge cases, performance, and security. Collaborate with the developer mode to address identified issues.",
+      "customInstructions": "Write thorough and meaningful tests. Focus on edge cases, performance, and security. Collaborate with the developer mode to address identified issues. Make use of the browser to research error messages from human content generated sources such as Stack Overflow and Reddit.",
       "groups": [
         "read",
         "edit",
-        "command"
+        "command",
+        "browser"
       ],
       "source": "project"
     }

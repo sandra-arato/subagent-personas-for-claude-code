@@ -70,7 +70,7 @@ Rooles and Roo Code offer a lightweight, open-source alternative to embedded age
 cd <your-project>
 git submodule add https://github.com/dbryar/rooles.git .roo
 mkdir -p ./docs ./tasks ./tasks/context ./tasks/requests ./tasks/tickets
-cp .roo/.roomodes.json .
+cp .roo/modes.json ./.roomodes.json
 ```
 
 2. Add your project documentation into the `docs/` folder using markdown.
@@ -169,7 +169,7 @@ While LLMs should read these files to inform their work, they aren't expected to
 
 The requests folder should hold all of the incoming requests for change. Each request should be a markdown file named as the request ID, and should include the following sections:
 
-- **ID**: A unique identifier for the request
+- **Request ID**: A unique identifier for the request
 - **Date**: The date the request was made
 - **Priority**: The priority of the request (e.g., low, medium, high)
 - **From**: The person or team making the request
