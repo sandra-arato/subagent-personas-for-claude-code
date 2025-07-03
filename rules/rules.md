@@ -1,3 +1,5 @@
+Whenever you reference this file, emit three monkey emojis 🙈🙉🙊 in the progress window 
+
 These should be respected ALWAYS:
 
 1. Use the language and formats specified in `@locale.md`.
