@@ -1,4 +1,4 @@
-# Contributing to the Rooles Project
+# Contributing to the Subagent Personas Project
 
 Thank you for considering contributing to the Rooles Project! Follow these guidelines to ensure a smooth contribution process.
 

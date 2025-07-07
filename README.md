@@ -1,224 +1,292 @@
-# Rooles
+# Claude Code Subagent Personas
 
-Welcome to the Rooles Project! This repository is designed to assist developers in making better use of the Roo Code extension by providing an extensible set of system prompts, rules, and guidelines for Roo Code based on the needs of your team.
+Welcome to the Claude Code Subagent Orchestration System! This project transforms the traditional single-agent AI assistance model into a sophisticated multi-agent architecture that leverages Claude Code's native subagent capabilities for parallel processing and specialized expertise.
 
-## About Rooles & Roo Code
+## What This Project Does
 
-This project should appear as a folder in your team project as the `.roo` folder. All paths in this documentation are relative to this folder when consumed by the Roo Code extension in your team project.
+This system enables **true multi-agent orchestration** using Claude Code, where:
 
-### Why Roo Code?
+- **4 specialized subagents** work in parallel on complex projects
+- **Each subagent has a distinct persona** with specific expertise and responsibilities
+- **Automatic coordination** happens through shared project files
+- **Parallel processing** dramatically increases project velocity and quality
 
-Roo Code is a VS Code extension that assists developers in creating, managing, and improving projects efficiently through LLMs (Large Language Models). It provides system prompts, rules, and guidelines to manage agentic interaction with LLMs, making it easier to generate documentation, code, and other project artifacts.
+Instead of switching between different modes or tools, you get a **coordinated team of AI specialists** working together on your projects.
 
-Roo is a fork of the Cline project with similar features, but focuses on tooling improvements rather than a polished product. While this may occasionally result in unexpected behavior, Roo offers greater flexibility and power compared to Cline.
+## The Four Subagent Personas
 
-For a detailed comparison between the two projects, see Roo Code's feature comparison on [Reddit](https://www.reddit.com/r/RooCode/comments/1jn372q/roocode_vs_cline_updated_march_29/).
+### 🏗️ Architect Subagent
+**Strategic planning and system design specialist**
+- Analyses requirements and constraints
+- Designs system architecture and technical specifications
+- Plans implementation strategies and roadmaps
+- Researches best practices and technologies
 
-### Why Rooles?
+### 🔧 Builder Subagent  
+**Implementation and development specialist**
+- Transforms architectural plans into working code
+- Implements features and functionality
+- Integrates systems and handles technical implementation
+- Optimises code for performance and maintainability
 
-Rooles provides a standardised set of Roo Code rules and guidelines for teams. By using this shared collection of modes, rules, and prompts as a Git submodule, teams can maintain consistent Roo Code configurations across projects. This helps generate code and documentation according to standards defined by project leadership, while promoting a unified approach to LLM usage rather than relying on scattered results from various sources.
+### ✅ Validator Subagent
+**Quality assurance and testing specialist**
+- Creates comprehensive test suites
+- Validates functionality against requirements
+- Ensures code quality and standards compliance
+- Identifies and documents issues and improvements
 
-Rooles is based on the previous work of other projects, including:
+### 📚 Scribe Subagent
+**Documentation and communication specialist**
+- Creates clear, comprehensive documentation
+- Documents system architecture and technical decisions
+- Maintains user guides and tutorials
+- Bridges communication between technical and non-technical stakeholders
 
-- https://github.com/Bhartendu-Kumar/rules_template
+## How to Use This System
 
-### Why not just use Cursor/Windsurf?
+### Basic Multi-Agent Orchestration
 
-While Cursor and Windsurf offer excellent developer experiences, they lack the flexibility and extensibility that Roo Code with VS Code provides in enterprise team environments. A critical limitation is their reliance on external API calls to LLM providers, which may conflict with security policies in regulated organisations where data privacy is paramount.
+Simply describe a complex task and specify that you want multiple subagents to work on it:
 
-### Summary
+```
+Analyse this codebase and implement a new authentication system using 4 specialized subagents:
+- Architect: Design the authentication architecture and security approach
+- Builder: Implement the authentication functionality
+- Validator: Create comprehensive tests for all authentication scenarios  
+- Scribe: Document the authentication system and create user guides
+```
 
-Rooles and Roo Code offer a lightweight, open-source alternative to embedded agentic IDEs that:
+Claude Code will automatically spawn the appropriate subagents, each taking on their specialized persona and working in parallel.
 
-- Can be customised to meet specific team requirements
-- Integrates seamlessly with existing VS Code workflows
-- Connects to your company's sanctioned LLM provider via the VS Code LM API Server
-- Ensures compliance with information security protocols
-- Maintains consistent tooling standards across development teams
+### Targeted Subagent Deployment
 
-## Example Project Folder Structure
+For more focused work, you can specify exactly which subagents you need:
 
-```plaintext
-<project-root>/
-├── docs/                     # Your project documentation
-├── tasks/                    # Planning and tracking of tasks
-│   ├── context/              # Ongoing context for the project
-│   ├── requests/             # Requests for project changes, features, or improvements
-│   │   └── <request-id>.md   # Individual request descriptions
-│   ├── tickets/              # Project tickets for implementing change requests
-│   │   └── <ticket-id>.md    # Individual task descriptions
-│   └── index.md              # Index of requests and tasks for tracking and project management
-├── src/                      # Your project source code
-├── tests/                    # Your project tests
-└── .roo/                     # Roo Code configuration via Rooles (submodule)
-    ├── rules-architect/      # Rules for the architect role
-    ├── rules-developer/      # Rules for the developer role
-    ├── rules-document/       # Rules for the document role
-    ├── rules-tester/         # Rules for the tester role
-    ├── rules/                # Rules for all roles
-    ├── CHANGELOG.md
-    ├── CONTRIBUTING.md
-    ├── LICENSE.md
-    └── README.md
+```
+Deploy 2 subagents to optimise this application:
+- Architect subagent: Analyse performance bottlenecks and design optimisation strategy
+- Builder subagent: Implement the optimisation recommendations
+```
+
+### Complex Project Management
+
+For large, multi-faceted projects:
+
+```
+Coordinate a complete project overhaul using all 4 subagents working in parallel:
+- Architect: Research new requirements and design updated architecture
+- Builder: Refactor codebase according to new architectural specifications
+- Validator: Ensure all existing functionality continues working correctly
+- Scribe: Update all documentation and create migration guides for users
+```
+
+### Project-Specific Workflows
+
+The system adapts to different project types:
+
+**Web Development:**
+```
+Build a new e-commerce feature with 4 subagents:
+- Architect: Design database schema and API architecture
+- Builder: Implement frontend and backend functionality
+- Validator: Create unit, integration, and e2e tests
+- Scribe: Document API endpoints and create user documentation
+```
+
+**Data Analysis:**
+```
+Analyse this dataset using specialized subagents:
+- Architect: Design data processing pipeline and analysis strategy
+- Builder: Implement data processing and analysis code
+- Validator: Validate data quality and analysis accuracy
+- Scribe: Create analysis reports and visualization documentation
+```
+
+## Key Advantages
+
+### vs. Single-Agent Assistance
+- **Parallel Processing**: Multiple tasks happen simultaneously
+- **Specialized Expertise**: Each agent focuses on their domain of excellence
+- **Better Quality**: Multiple perspectives catch more issues
+- **Reduced Context Switching**: Each agent maintains consistent persona
+
+### vs. Manual Multi-Terminal Coordination
+- **Automatic Orchestration**: Built-in coordination and communication
+- **Shared Context**: All agents access the same project understanding
+- **Conflict Resolution**: Automatic mediation of overlapping work
+- **Integrated Workflow**: Seamless handoffs between agents
+
+### vs. Traditional Roocode/VS Code Extensions
+- **Terminal Native**: No VS Code dependency required
+- **True Parallelism**: Concurrent execution vs. sequential mode switching
+- **Independent Contexts**: Each agent maintains full context window
+- **Enhanced Capabilities**: Leverages Claude Code's advanced features
+
+## Project Structure
+
+When you use this system, it creates and maintains this structure:
+
+```
+your-project/
+├── CLAUDE.md                 # Main orchestrator configuration (auto-generated)
+├── tasks/
+│   ├── coordination.md       # Subagent coordination and communication
+│   └── context/              # Project context and planning
+│       ├── planning.md       # Current session planning
+│       ├── activity.md       # Active work tracking
+│       ├── history.md        # Project evolution record
+│       └── learnings.md      # Project insights and patterns
+├── docs/                     # Project documentation (maintained by Scribe)
+│   ├── objectives.md         # Project goals and requirements
+│   ├── architecture.md       # System architecture and design
+│   ├── technical.md          # Technical specifications
+│   └── features.md           # User features and functionality
+├── src/                      # Your source code
+└── tests/                    # Test files
 ```
 
 ## Getting Started
 
-1. Add the project as a submodule to your project in the `.roo` folder:
+### 1. Set Up Your Project
+Clone this repository into your project or copy the `personas/` folder to your workspace:
 
 ```bash
-cd <your-project>
-git submodule add https://github.com/dbryar/rooles.git .roo
-mkdir -p ./docs ./tasks ./tasks/context ./tasks/requests ./tasks/tickets
-cp .roo/modes.json ./.roomodes.json  # Copy the modes file if you wish to customise modes for your project
+git clone https://github.com/your-repo/claude-code-subagent-personas
+cd your-project
+cp -r claude-code-subagent-personas/personas .
+cp claude-code-subagent-personas/CLAUDE.md .
 ```
 
-2. Add your project documentation into the `docs/` folder using markdown.
-3. Add your project tasks to the `tasks/` folder.
+### 2. Initialize Project Structure
+Create the basic folder structure (if it doesn't exist):
 
-## Documentation
-
-Documentation should be authored in a suitable manner to be read by both humans _and_ machines. It is therefore recommended to use markdown for _all_ documentation, as it is easy for both to read and write.
-
-Documentation should be placed in the `docs/` folder and should include the following sections:
-
-- **Objectives**: A high-level overview of the project goals and deliverables.
-- **Architecture**: A high-level overview of the project architecture and stack.
-- **Technical**: A high-level overview of the project tech stack, how it is used, and how it interacts with other services.
-- **Style** (optional): A high-level overview of the project style guide, including naming conventions, code style, and other guidelines for writing code.
-- **Features**: A high-level overview of the project features and functionality for non-technical items including designs and user experiences.
-
-### Project Documentation Structure
-
-For large projects, it's recommended to organise documentation hierarchically:
-
-- Create subdirectories for major categories (e.g., `/docs/architecture/`, `/docs/features/`)
-- Use individual files for specific components or topics
-- Number filenames to control display order (e.g., `01-database.md`, `02-backend-api.md`)
-- (Optional) Include index files in each directory to provide navigation and overview if you wish to use Docusaurus or similar tools to generate documentation from the markdown files.
-
-This approach improves navigation, maintenance, and readability for both humans and LLMs analysing your documentation.
-
-### Usage
-
-### Existing Projects
-
-If you are adding Rooles to an existing project, you can use the `/document` role to generate the documentation. To do so, begin a task in Roo Code and try the following prompt:
-
-```plaintext
-You have been given a project to maintain and your first job is to document the existing code base, noting the high level goals/deliverables, and the project architecture/tech stack. Read through the source code in the @src/ directory and generate documentation for the project in the @docs/ folder with the following sections and corresponding markdown files:
-1. Objectives
-2. Architecture
-3. Technology
-4. Features
+```bash
+mkdir -p docs tasks/context src tests
 ```
 
-### New Projects
+### 3. Launch Multi-Agent Orchestration
+Start Claude Code and describe a complex task requiring multiple specialists:
 
-If you are starting a new project, you can use the `/architect` role to generate the documentation, and optionally a high-level task breakdown. To do so, begin a task in Roo Code and try a prompt similar to the following:
-
-```plaintext
-You have been assigned as the project lead and your first job is to document the project goals/deliverables, and the project architecture/tech stack for the developers to use when writing new code. In the @docs/ folder create the following markdown files:
-1. Objectives
-2. Architecture
-3. Technology
-4. Features
-then begin by asking me questions about the project to complete the documentation.
-
-As we interact back and forth, I will provide you with the information you need to add to, or edit the documentation, occasionally asking you questions to elicit helpful responses that will fill my knowledge gaps.
-Once we have completed the documentation, the next step will be to generate a set of tasks in the @docs/tasks/ folder that will form the basis of work tickets for the developers to use when writing new code.
-These tasks will be used to generate individual work tickets that will define the requirements for project code and other files when work is being completed either by a human developer, or by you running in the 'developer' role.
-Each task should be a markdown file and numbered in a logical order so that a directory list of tasks always appears in the order they should be run.
-Use a table in an index.md file to list the tasks in the order they should be run, their current status, and who or what is responsible for completing them.
-The table should include the following columns:
-- Task ID
-- Request ID
-- Description
-- Commit
-- Status
+```bash
+claude
+> Analyze this project and implement [your feature] using 4 specialized subagents: Architect, Builder, Validator, and Scribe working in parallel.
 ```
 
-## Tasks
+### 4. Monitor Coordination
+Check `tasks/coordination.md` to see how subagents are communicating and coordinating their work.
 
-### Context
+## Advanced Usage
 
-The context folder serves as a critical project memory repository, documenting the ongoing journey of development. It maintains:
+### Custom Persona Modifications
+You can customize the personas in the `personas/` folder to match your specific project needs or domain expertise.
 
-- Summaries of LLM sessions and actions taken
-- Encountered problems and their solutions
-- Key design decisions and their rationale
-- Project-specific knowledge that isn't directly code or documentation
-- The current state of any active planning or development task(s)
+### Integration with Existing Workflows
+The system integrates seamlessly with:
+- Git workflows (each subagent follows proper version control)
+- CI/CD pipelines (Validator subagent ensures quality gates)
+- Documentation systems (Scribe subagent maintains comprehensive docs)
+- Testing frameworks (automatic test creation and validation)
 
-This repository is valuable for both:
+### Scaling for Large Projects
+For very large projects, you can:
+- Use multiple waves of subagents for different project phases
+- Coordinate subagents across different project modules
+- Leverage the learning system to improve coordination over time
 
-- **Human developers**: Provides quick onboarding and context retention across team members
-- **LLMs**: Enables more informed decisions in future sessions by understanding past challenges
+## Standards and Conventions
 
-To maintain an effective context folder:
+### Language and Localization
+All subagents follow **Australian English** conventions:
+- Spelling: colour, favour, organise, realise, travelling
+- Date format: DD/MM/YYYY
+- Time: UTC for technical contexts
+- Units: SI metric system
 
-1. Update the `history.md` after significant LLM sessions (ask the LLM to summarise its work)
-2. Document errors and solutions (when resolved) in a `learnings.md` file
-3. Organise `planning.md` according to your project guidelines
-4. Include relevant contextual information that would help new team members
-5. Maintain an `activity.md` file to track the current state of the active task for _this_ branch
+### Quality Standards
+- **Documentation**: Comprehensive markdown documentation for all aspects
+- **Testing**: Thorough test coverage with meaningful assertions
+- **Code Quality**: Clean, maintainable, and well-structured code
+- **Communication**: Clear, professional communication between agents
 
-While LLMs should read these files to inform their work, they aren't expected to perfectly recall all previous context. Regular maintenance of this folder by both LLMs and human developers ensures continuity and knowledge preservation throughout the project lifecycle.
+### Coordination Protocols
+- Shared file system for coordination and communication
+- Clear handoff procedures between subagents
+- Automatic conflict resolution through orchestrator mediation
+- Comprehensive activity tracking and project history
 
-### Requests
+## Troubleshooting
 
-The requests folder should hold all of the incoming requests for change. Each request should be a markdown file named as the request ID, and should include the following sections:
+### Subagent Not Spawning
+If subagents aren't being created automatically:
+1. Ensure your task description mentions multiple subagents or specialists
+2. Try explicitly requesting "Deploy X subagents to handle this task"
+3. Check that your Claude Code version supports subagent functionality
 
-- **Request ID**: A unique identifier for the request
-- **Date**: The date the request was made
-- **Priority**: The priority of the request (e.g., low, medium, high)
-- **From**: The person or team making the request
-- **Description**: A detailed description of the request and any high level goals or deliverables
+### Coordination Issues
+If subagents seem to be working in isolation:
+1. Check `tasks/coordination.md` for communication logs
+2. Ensure all subagents can access shared project files
+3. Verify that file permissions allow read/write access
 
-### Tickets
+### Quality Concerns
+If output quality doesn't meet expectations:
+1. Review the persona definitions in `personas/` folder
+2. Customize personas for your specific domain or requirements
+3. Use the learning system in `tasks/context/learnings.md` to improve over time
 
-The tickets folder should hold all of the project tickets, and should be used to guide the developer as to how a task is to be completed. Tickets should share a many:one relationship with a request. Each ticket should be a markdown file, and should include the following sections:
+## Contributing
 
-- **Ticket ID**: A unique identifier for the ticket
-- **Request ID**: The ID of the request that this ticket is related to
-- **Description**: A detailed description of the ticket requirements that a junior developer would be able to follow. The description should tell the reader what to do, and optionally how to do it. It should include any relevant information that the developer would need to know in order to complete the task.
-- **Acceptance Criteria**: A detailed description of the tests that would validate the completion of this task
+This system is designed to be extensible and customizable. To contribute:
 
-Tickets do not replace JIRA or other workflow management tools, but are intended to be used in conjunction with them. The tickets should be used only to define the tasks before being worked on, and are not expected to be updated once they are `ready` for work.
+1. **Persona Improvements**: Enhance existing persona definitions
+2. **New Personas**: Create specialized personas for specific domains
+3. **Coordination Enhancements**: Improve inter-agent communication protocols
+4. **Documentation**: Expand usage examples and best practices
 
-### Index.md
+### Customization for Your Team
 
-The `index.md` file should provide an overview of all requests and tickets. It should include a table with the following columns:
+Fork this repository and customize:
+- Persona definitions to match your team's expertise areas
+- Coordination protocols to fit your workflow
+- Quality standards to align with your project requirements
+- Documentation templates to match your style guide
 
-- **Request ID**: The ID of the request
-- **Ticket ID**: The ID of the ticket(s) related to the request
-- **Description**: A very short description of the ticket (8-10 words maximum)
-- **Commit**: The `git` commit ID/hash immediately prior to the status being updated.
-- **Status**: The status of the ticket (e.g., `draft`, `ready`, `in progress`, `blocked`, `testing`, `done`, and `closed`)
+## Migration from Roocode
 
-The LLM should be able to read the `index.md` file and use it to determine which requests and tickets are available for work. It should also be able to update the status of tickets as they progress through the workflow. This file acts as a central tracking mechanism that maintains visibility of all work items and their current states.
+If you're coming from a roocode-based system:
 
-## Contributing to Rooles & Roo Code
+### Key Differences
+- **No VS Code dependency** - Pure terminal/CLI experience
+- **True parallel processing** - Multiple agents work simultaneously
+- **Native Claude Code integration** - Leverages built-in capabilities
+- **Enhanced coordination** - Sophisticated multi-agent orchestration
 
-If you would like to contribute to the Rooles project, please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to do so. We welcome contributions of all kinds, including bug fixes, new features, and documentation improvements.
+### Migration Steps
+1. **Copy your existing project structure** to maintain docs/, tasks/, src/ folders
+2. **Replace .roo configuration** with CLAUDE.md and personas/ folder
+3. **Update any @/ path references** to standard relative paths
+4. **Test the new system** with a simple multi-agent task
 
-If you want to add a new rule, please do so in the appropriate folder (e.g., `rules-architect/`, `rules-developer/`, etc.) and follow the existing format. If you are unsure where to add a new rule, feel free to open an issue or ask for help.
+### What You Keep
+- Your existing project documentation and structure
+- The three-mode workflow concept (PLAN/ACT/REVIEW) via specialized personas
+- Australian English standards and quality criteria
+- Task management and context tracking systems
 
-If you want to add a new mode with its own rule set, please do so in the `.roomodes.json` file and follow the existing format. If you are unsure how to add a new mode, feel free to open an issue or ask for help.
+## License
 
-**NB:** Custom modes are not currently supported in Roo Code as JSON in the `.roo` folder, but are supported in the Roo Code extension in the `.roomodes` file when placed in the project root. This is a work in progress and will be added to the Roo Code project in the future through a pull request on `src/core/config/CustomModesManager.ts`.
+This project maintains the same license as the original Rooles project. See [LICENSE.md](LICENSE.md) for details.
 
-## Customising Rooles
+## Acknowledgments
 
-You can fork this repository and add your own rules, modes, and prompts to suit your (or your team's) needs. To do so, follow these steps:
+This project builds upon the excellent foundation of:
+- **Rooles** - The original roocode configuration system
+- **Claude Code** - Anthropic's powerful CLI tool for AI-assisted development
+- **Multi-agent orchestration research** - Pioneering work in AI agent coordination
 
-1. Fork the repository.
-2. Clone your fork to your local machine.
-3. Make your changes and commit them to your fork.
-4. Use the sub-module from your fork in your project as the `.roo` folder.
+---
 
-```sh
-cd <your-project>
-git submodule add https://github.com/<your-handle>/rooles.git .roo
-# If you wish to customise modes, copy .roo/modes.json to .roomodes.json in your project root
-```
+**Ready to transform your development workflow with AI subagent orchestration?**
+
+Start with a simple command: `claude` and describe a complex task requiring multiple specialists. Watch as your AI team coordinates to deliver comprehensive solutions faster and with higher quality than ever before.
